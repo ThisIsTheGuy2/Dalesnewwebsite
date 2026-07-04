@@ -84,71 +84,19 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-[#041430] text-white relative overflow-hidden">
-        <!-- Abstract gradient backgrounds from image 1000075896.png -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(26,115,232,0.15),transparent_45%)]"></div>
-        <div class="absolute top-1/2 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl -translate-y-1/2"></div>
+    <!-- HERO SECTION WITH IMAGE -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 relative w-full bg-cover bg-center bg-no-repeat" style="background-image: url('file_00000000e94c71f4a7f60342e0d0ec2e.png'); min-height: 500px; aspect-ratio: auto;">
+        <div class="absolute inset-0 bg-black/20"></div>
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Content Column -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 bg-white/10 px-4 py-1.5 rounded-full border border-white/10 text-xs font-medium tracking-wide uppercase text-blue-300">
-                        <i class="fa-solid fa-shield-check text-blue-400"></i>
-                        <span>Professional Websites That Get Results</span>
-                    </div>
-                    
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
-                        Modern Websites.<br>
-                        Trusted Service.<br>
-                        <span class="text-blue-500">Guaranteed Results.</span>
-                    </h1>
-                    
-                    <p class="text-slate-300 text-lg max-w-xl mx-auto lg:mx-0">
-                        Dales Web Solutions helps businesses build a strong online presence with fast, beautiful, and effective websites that convert visitors into customers.
-                    </p>
-                    
-                    <!-- Fast badges from visual -->
-                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-300 pt-2">
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-rocket text-blue-500"></i> FAST DELIVERY</span>
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-blue-500"></i> TRUSTED SERVICE</span>
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-chart-line text-blue-500"></i> RESULTS DRIVEN</span>
-                    </div>
-
-                    <!-- Actions -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#contact" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl text-center shadow-lg shadow-blue-600/30 transition">
-                            GET YOUR WEBSITE NOW
-                        </a>
-                        <a href="https://wa.me/27123456789" target="_blank" class="w-full sm:w-auto border border-white/20 hover:bg-white/5 text-white font-bold px-8 py-4 rounded-xl text-center flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i> WHATSAPP US
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Device Mockups / Pricing Stamp Column -->
-                <div class="lg:col-span-5 relative mt-10 lg:mt-0 flex justify-center">
-                    <!-- Main Laptop Frame Placeholder Graphic -->
-                    <div class="relative w-full max-w-md bg-slate-900 rounded-2xl p-3 shadow-2xl border border-slate-700/50">
-                        <div class="aspect-[16/10] bg-gradient-to-br from-blue-900 to-slate-900 rounded-lg overflow-hidden flex flex-col justify-center items-center text-center p-6 relative">
-                            <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">We Build Websites</span>
-                            <h3 class="text-xl font-bold mt-1">That Grow Your Business</h3>
-                            <button class="mt-4 bg-blue-600 text-[10px] font-bold px-4 py-1.5 rounded text-white">LEARN MORE</button>
-                        </div>
-                        
-                        <!-- Floating Pricing badge from 1000075896.png -->
-                        <div class="absolute -bottom-8 -left-6 bg-blue-600 text-white rounded-full w-40 h-40 flex flex-col items-center justify-center border-4 border-[#041430] shadow-2xl z-20 text-center">
-                            <span class="text-[10px] font-bold tracking-widest text-blue-200 uppercase">— ONLY —</span>
-                            <span class="text-3xl font-black tracking-tight leading-none my-0.5">R1200</span>
-                            <span class="text-[11px] font-bold text-blue-100">+ DOMAIN</span>
-                            <div class="w-4/5 border-t border-blue-400/40 my-1"></div>
-                            <span class="text-[9px] font-medium leading-tight px-2 text-blue-100">1 PAGE • 5 SECTIONS</span>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col justify-center items-center text-center">
+            <!-- CTA Buttons positioned below content -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full">
+                <a href="#contact" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl text-center shadow-lg shadow-blue-600/30 transition">
+                    GET YOUR WEBSITE NOW
+                </a>
+                <a href="https://wa.me/27123456789" target="_blank" class="w-full sm:w-auto border border-white/20 hover:bg-white/5 text-white font-bold px-8 py-4 rounded-xl text-center flex items-center justify-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i> WHATSAPP US
+                </a>
             </div>
         </div>
     </section>
