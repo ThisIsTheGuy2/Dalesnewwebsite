@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dales Web Solutions | Premium 1-Page Websites</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom Colors matched from 1000075896.png */
+        :root {
+            --primary-blue: #0A58CA;
+            --electric-blue: #1A73E8;
+            --dark-navy: #041430;
+            --accent-blue: #002244;
+            --bg-light: #F8FAFC;
+        }
+        
+        /* Smooth SVG Wave Animation */
+        @keyframes waveMove {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animated-wave {
+            animation: waveMove 15s linear infinite;
+        }
+
+        /* FAQ Transition classes */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+        }
+        .faq-card.active .faq-answer {
+            max-height: 200px; /* Adjust as necessary */
+            padding-top: 1rem;
+        }
+        .faq-card.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Placeholder (Swap with yours later!) -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-extrabold text-xl shadow-md shadow-blue-500/20">
+                    D
+                </div>
+                <div class="leading-tight">
+                    <span class="text-xl font-extrabold text-[#041430] tracking-tight block">DALES</span>
+                    <span class="text-xs font-bold text-blue-600 tracking-widest uppercase block -mt-1">Web Solutions</span>
+                </div>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#portfolio" class="hover:text-blue-600 transition">Our Work</a>
+                <a href="#process" class="hover:text-blue-600 transition">Process</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition">Reviews</a>
+                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="https://wa.me/27123456789" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2.5 rounded-lg text-sm transition shadow-md shadow-blue-600/20 hidden sm:block">
+                GET STARTED
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-[#041430] text-white relative overflow-hidden">
+        <!-- Abstract gradient backgrounds from image 1000075896.png -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(26,115,232,0.15),transparent_45%)]"></div>
+        <div class="absolute top-1/2 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl -translate-y-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 px-4 py-1.5 rounded-full border border-white/10 text-xs font-medium tracking-wide uppercase text-blue-300">
+                        <i class="fa-solid fa-shield-check text-blue-400"></i>
+                        <span>Professional Websites That Get Results</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
+                        Modern Websites.<br>
+                        Trusted Service.<br>
+                        <span class="text-blue-500">Guaranteed Results.</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-lg max-w-xl mx-auto lg:mx-0">
+                        Dales Web Solutions helps businesses build a strong online presence with fast, beautiful, and effective websites that convert visitors into customers.
+                    </p>
+                    
+                    <!-- Fast badges from visual -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-300 pt-2">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-rocket text-blue-500"></i> FAST DELIVERY</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-blue-500"></i> TRUSTED SERVICE</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-chart-line text-blue-500"></i> RESULTS DRIVEN</span>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl text-center shadow-lg shadow-blue-600/30 transition">
+                            GET YOUR WEBSITE NOW
+                        </a>
+                        <a href="https://wa.me/27123456789" target="_blank" class="w-full sm:w-auto border border-white/20 hover:bg-white/5 text-white font-bold px-8 py-4 rounded-xl text-center flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i> WHATSAPP US
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Device Mockups / Pricing Stamp Column -->
+                <div class="lg:col-span-5 relative mt-10 lg:mt-0 flex justify-center">
+                    <!-- Main Laptop Frame Placeholder Graphic -->
+                    <div class="relative w-full max-w-md bg-slate-900 rounded-2xl p-3 shadow-2xl border border-slate-700/50">
+                        <div class="aspect-[16/10] bg-gradient-to-br from-blue-900 to-slate-900 rounded-lg overflow-hidden flex flex-col justify-center items-center text-center p-6 relative">
+                            <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">We Build Websites</span>
+                            <h3 class="text-xl font-bold mt-1">That Grow Your Business</h3>
+                            <button class="mt-4 bg-blue-600 text-[10px] font-bold px-4 py-1.5 rounded text-white">LEARN MORE</button>
+                        </div>
+                        
+                        <!-- Floating Pricing badge from 1000075896.png -->
+                        <div class="absolute -bottom-8 -left-6 bg-blue-600 text-white rounded-full w-40 h-40 flex flex-col items-center justify-center border-4 border-[#041430] shadow-2xl z-20 text-center transform -rotate-6">
+                            <span class="text-[10px] font-bold tracking-widest text-blue-200 uppercase">— ONLY —</span>
+                            <span class="text-3xl font-black tracking-tight leading-none my-0.5">R1200</span>
+                            <span class="text-[11px] font-bold text-blue-100">+ DOMAIN</span>
+                            <div class="w-4/5 border-t border-blue-400/40 my-1"></div>
+                            <span class="text-[9px] font-medium leading-tight px-2 text-blue-100">1 PAGE • 5 SECTIONS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU GET / VALUE GRID -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">— WHAT YOU GET —</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-[#041430] mt-2">Everything You Need. One Powerful Website.</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-xl shadow-slate-100/50 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-file-lines"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm mb-2 uppercase">1 Page<br>5 Sections</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Professionally designed to showcase your business business goals accurately.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-xl shadow-slate-100/50 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm mb-2 uppercase">Fully Mobile<br>Friendly</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Looks perfect on all physical device devices and screen sizes natively.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-xl shadow-slate-100/50 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm mb-2 uppercase">Speed<br>Optimized</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Fast loading parameters for exceptional user journeys & SEO performance.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-xl shadow-slate-100/50 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm mb-2 uppercase">Secure &<br>Reliable</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Built with security industry protocols you can unconditionally trust.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-xl shadow-slate-100/50 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-code"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm mb-2 uppercase">Clean &<br>Modern Design</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Clean code implementations paired with gorgeous aesthetics that convert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / WORK PLACEHOLDERS SECTION -->
+    <section id="portfolio" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">— PORTFOLIO —</span>
+                <h2 class="text-3xl font-extrabold text-[#041430] mt-2">Here's Some of Our Work</h2>
+                <p class="text-slate-500 text-sm mt-2">Take a look at high-converting loops and live layouts built for fast performance.</p>
+            </div>
+
+            <!-- 4 Responsive Placeholders for GIFs or Loop Videos -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-md group">
+                    <div class="aspect-[4/3] bg-slate-200 flex flex-col items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-play-cycle text-3xl text-slate-400 group-hover:scale-110 transition duration-300"></i>
+                        <span class="text-xs text-slate-500 mt-2 font-medium">[ GIF / Loop Video Placeholder ]</span>
+                    </div>
+                    <div class="p-4 border-t border-slate-50">
+                        <h4 class="font-bold text-sm text-[#041430]">E-Commerce Boutique Layout</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-md group">
+                    <div class="aspect-[4/3] bg-slate-200 flex flex-col items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-play-cycle text-3xl text-slate-400 group-hover:scale-110 transition duration-300"></i>
+                        <span class="text-xs text-slate-500 mt-2 font-medium">[ GIF / Loop Video Placeholder ]</span>
+                    </div>
+                    <div class="p-4 border-t border-slate-50">
+                        <h4 class="font-bold text-sm text-[#041430]">Local Tradie Landing Page</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-md group">
+                    <div class="aspect-[4/3] bg-slate-200 flex flex-col items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-play-cycle text-3xl text-slate-400 group-hover:scale-110 transition duration-300"></i>
+                        <span class="text-xs text-slate-500 mt-2 font-medium">[ GIF / Loop Video Placeholder ]</span>
+                    </div>
+                    <div class="p-4 border-t border-slate-50">
+                        <h4 class="font-bold text-sm text-[#041430]">Consulting Firm Lead Funnel</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-md group">
+                    <div class="aspect-[4/3] bg-slate-200 flex flex-col items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-play-cycle text-3xl text-slate-400 group-hover:scale-110 transition duration-300"></i>
+                        <span class="text-xs text-slate-500 mt-2 font-medium">[ GIF / Loop Video Placeholder ]</span>
+                    </div>
+                    <div class="p-4 border-t border-slate-50">
+                        <h4 class="font-bold text-sm text-[#041430]">Medical Practice Info Portal</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Up to 10 .co.za Domain Client Links Grid -->
+            <div class="mt-16 bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm">
+                <h3 class="text-center font-bold text-sm text-slate-400 tracking-wider uppercase mb-6">Explore Our Live Network Of .CO.ZA Client Successes</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">johannesburgplumbers.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">capetownboutique.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">durvanelectrical.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">pretoriafitstudio.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">karoolodging.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">mzansicatering.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">randburgaccounting.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">gautenglogistics.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">winelandscreative.co.za</a>
+                    <a href="#" class="p-3 bg-slate-50 hover:bg-blue-50 text-xs font-semibold text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 transition truncate">sowetotours.co.za</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BANNER (From Image Middle Layout) -->
+    <section class="py-12 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="bg-[#041430] rounded-3xl p-8 md:p-10 text-white relative overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+                <!-- Badge Graphic Contextual Recreation -->
+                <div class="flex items-center space-x-6">
+                    <div class="w-24 h-24 bg-blue-600 text-white rounded-2xl flex flex-col items-center justify-center p-2 font-black border border-blue-400/20 text-center shadow-lg">
+                        <span class="text-lg leading-none">100%</span>
+                        <span class="text-[9px] uppercase tracking-tighter">Satisfaction</span>
+                        <span class="text-[8px] bg-white text-[#041430] px-1 font-bold rounded mt-1">GUARANTEED</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold">We Stand By Our Work.<br><span class="text-blue-400">100% Guaranteed Results.</span></h3>
+                        <p class="text-slate-400 text-xs max-w-sm mt-1">Your satisfaction is our priority. We don't just build sites, we engineer conversions.</p>
+                    </div>
+                </div>
+                <!-- Checklist items -->
+                <div class="grid grid-cols-2 gap-4 text-xs font-medium text-slate-300">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-500"></i> Clear Communication</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-500"></i> On-Time Delivery</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-500"></i> Quality Guaranteed</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-500"></i> Ongoing Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">— OUR SIMPLE PROCESS —</span>
+                <h2 class="text-3xl font-extrabold text-[#041430] mt-2">From Idea To Online In 4 Easy Steps</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="text-center space-y-3 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shadow-md">1</div>
+                    <div class="w-12 h-12 bg-slate-50 text-blue-600 rounded-xl flex items-center justify-center text-xl shadow-sm"><i class="fa-solid fa-comments"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm uppercase">Discuss</h4>
+                    <p class="text-slate-500 text-xs max-w-xs">We discuss your goals, content structure and exact design vision.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="text-center space-y-3 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shadow-md">2</div>
+                    <div class="w-12 h-12 bg-slate-50 text-blue-600 rounded-xl flex items-center justify-center text-xl shadow-sm"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm uppercase">Design</h4>
+                    <p class="text-slate-500 text-xs max-w-xs">We design your beautiful layout optimized to match your direct brand identity.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="text-center space-y-3 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shadow-md">3</div>
+                    <div class="w-12 h-12 bg-slate-50 text-blue-600 rounded-xl flex items-center justify-center text-xl shadow-sm"><i class="fa-solid fa-rocket"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm uppercase">Develop</h4>
+                    <p class="text-slate-500 text-xs max-w-xs">We build a remarkably fast, secure, and entirely responsive website.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="text-center space-y-3 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shadow-md">4</div>
+                    <div class="w-12 h-12 bg-slate-50 text-blue-600 rounded-xl flex items-center justify-center text-xl shadow-sm"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4 class="font-bold text-[#041430] text-sm uppercase">Launch</h4>
+                    <p class="text-slate-500 text-xs max-w-xs">We test, deploy global optimizations, and push your site live to the web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOUTH AFRICAN TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">— TESTIMONIALS —</span>
+                <h2 class="text-3xl font-extrabold text-[#041430] mt-2">Here's What Our Customers Say</h2>
+                <p class="text-slate-500 text-sm mt-2">Trusted by small business owners across South Africa, from Cape Town to Jozi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 relative">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-sm">TL</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-[#041430]">Thabo Lekota</h4>
+                            <span class="text-[11px] text-slate-400 block">Johannesburg • Plumber</span>
+                        </div>
+                    </div>
+                    <div class="flex text-amber-400 text-xs mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed">"Pure class! Dales Web Solutions delivered my site within 3 days. Already getting calls via the WhatsApp button from local clients here in Gauteng. Clear communication all the way."</p>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 relative">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-sm">SV</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-[#041430]">Sarah van der Merwe</h4>
+                            <span class="text-[11px] text-slate-400 block">Cape Town • Boutique Owner</span>
+                        </div>
+                    </div>
+                    <div class="flex text-amber-400 text-xs mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed">"I was skeptical about the R1200 once-off cost at first, but there really are no hidden fees. The mobile interface looks extremely professional on everyone's phones. Highly recommend!"</p>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 relative">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-sm">ND</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-[#041430]">Naledi Dlamini</h4>
+                            <span class="text-[11px] text-slate-400 block">Durban • Catering Services</span>
+                        </div>
+                    </div>
+                    <div class="flex text-amber-400 text-xs mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed">"Excellent service from start to finish. They handled the domain registration seamlessly. Simple process, transparent pricing, and stellar post-launch support when I needed minor changes."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOM FAQ SECTION (Directly above footer) -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-[#041430] tracking-tight">Frequently Asked Questions</h2>
+                <p class="text-slate-500 text-sm mt-2">Everything you need to know before getting started.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-card bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-100/40 p-5 cursor-pointer transition" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-800 text-sm sm:text-base">How much does a website cost?</h4>
+                        <span class="chevron-icon w-6 h-6 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        R1200 once-off plus your domain registration. No hidden fees.
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-card bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-100/40 p-5 cursor-pointer transition" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-800 text-sm sm:text-base">What's included?</h4>
+                        <span class="chevron-icon w-6 h-6 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        A professionally designed 1-page website with 5 sections, fully mobile-friendly, speed optimized, contact form, WhatsApp integration, and basic SEO setup.
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-card bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-100/40 p-5 cursor-pointer transition" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-800 text-sm sm:text-base">How long does it take?</h4>
+                        <span class="chevron-icon w-6 h-6 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Most websites are completed within 2–5 business days after receiving your content.
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-card bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-100/40 p-5 cursor-pointer transition" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-800 text-sm sm:text-base">Can I update my website later?</h4>
+                        <span class="chevron-icon w-6 h-6 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Yes. Additional changes, extra pages, and future upgrades can be done whenever your business grows.
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="faq-card bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-100/40 p-5 cursor-pointer transition" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-800 text-sm sm:text-base">Will my website work on phones?</h4>
+                        <span class="chevron-icon w-6 h-6 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Absolutely. Every website is designed to look perfect on mobile phones, tablets, and desktops.
+                    </div>
+                </div>
+                <!-- FAQ 6 -->
+                <div class="faq-card bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-100/40 p-5 cursor-pointer transition" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-800 text-sm sm:text-base">Do I need to buy hosting?</h4>
+                        <span class="chevron-icon w-6 h-6 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        I'll help you choose reliable hosting and register your domain if needed.
+                    </div>
+                </div>
+                <!-- FAQ 7 -->
+                <div class="faq-card bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-100/40 p-5 cursor-pointer transition" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-800 text-sm sm:text-base">How do I get started?</h4>
+                        <span class="chevron-icon w-6 h-6 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Simply click Get Started or message us on WhatsApp with your business details, and we'll handle the rest.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM ANIMATED SVG WAVE TRANSITION -->
+    <div class="relative w-full overflow-hidden bg-white h-24 -mb-1">
+        <svg class="absolute w-[200%] h-full bottom-0 left-0 animated-wave" viewBox="0 0 1200 120" preserveAspectRatio="none" style="min-width: 2400px;">
+            <path d="M0,60 C150,90 350,30 500,60 C650,90 850,30 1000,60 C1150,90 1350,30 1500,60 C1650,90 1850,30 2000,60 C2150,90 2350,30 2500,60 L2500,120 L0,120 Z" fill="#041430"></path>
+        </svg>
+    </div>
+
+    <!-- LOWER CONVERSION BANNER (Directly above footer block) -->
+    <section id="contact" class="bg-[#041430] text-white pt-10 pb-12">
+        <div class="max-w-5xl mx-auto px-4 text-center md:text-left">
+            <div class="border border-white/10 rounded-3xl p-8 bg-blue-600/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h3 class="text-2xl font-black">Your Business Deserves<br>A Website That Works.</h3>
+                    <p class="text-blue-300 text-sm mt-1">Let's build it today.</p>
+                </div>
+                <div class="text-center">
+                    <span class="block text-xs font-bold text-blue-400">1 PAGE • 5 SECTIONS</span>
+                    <span class="block text-3xl font-black my-1">R1200 <span class="text-sm text-slate-400 font-medium">+ DOMAIN</span></span>
+                    <span class="block text-[10px] text-slate-400 uppercase tracking-wider">Fully Mobile Friendly & Speed Optimized</span>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <a href="#" class="bg-white text-[#041430] font-bold text-xs px-6 py-3 rounded-xl text-center hover:bg-slate-100 transition">GET STARTED NOW</a>
+                    <a href="https://wa.me/27123456789" class="bg-transparent border border-white/20 font-bold text-xs px-6 py-3 rounded-xl text-center flex items-center justify-center gap-2 hover:bg-white/5 transition"><i class="fa-brands fa-whatsapp text-green-400"></i> WHATSAPP US</a>
+                </div>
+            </div>
+            <p class="text-[10px] text-center text-slate-500 mt-4">Fast Response • Friendly Support</p>
+        </div>
+    </section>
+
+    <!-- MODERN DARK NAVY-BLUE FOOTER -->
+    <footer class="bg-[#041430] text-slate-400 text-xs border-t border-white/5 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Row of trust badges from bottom edge of 1000075896.png -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-b border-white/5 pb-8 mb-8 text-slate-300">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield text-blue-500 text-sm"></i>
+                    <div><span class="font-bold block text-xs">TRUSTED BY</span><span class="text-[10px] text-slate-400">LOCAL BUSINESSES</span></div>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
+                    <i class="fa-solid fa-star text-blue-500 text-sm"></i>
+                    <div><span class="font-bold block text-xs">QUALITY SERVICE</span><span class="text-[10px] text-slate-400">YOU CAN RELY ON</span></div>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
+                    <i class="fa-solid fa-thumbs-up text-blue-500 text-sm"></i>
+                    <div><span class="font-bold block text-xs">FOCUSED ON RESULTS</span><span class="text-[10px] text-slate-400">THAT MATTER</span></div>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
+                    <i class="fa-solid fa-headset text-blue-500 text-sm"></i>
+                    <div><span class="font-bold block text-xs">SUPPORT WHEN</span><span class="text-[10px] text-slate-400">YOU NEED IT</span></div>
+                </div>
+            </div>
+
+            <!-- Copyright info -->
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px]">
+                <p>&copy; 2026 Dales Web Solutions. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE FAQ JAVASCRIPT -->
+    <script>
+        function toggleFaq(card) {
+            // Close other open tabs optionally
+            document.querySelectorAll('.faq-card').forEach(item => {
+                if (item !== card) item.classList.remove('active');
+            });
+            // Toggle current target
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
